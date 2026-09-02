@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - North Star Bakery</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header id="site-header" aria-label="Site Header">
+        <a href="index.html" id="header-logo-link">
+            <img src="assets/images/bakery-logo_c.png" alt="North Star Bakery Logo" width="120" height="120"> 
+        </a>
+        <h1>Our Products</h1>
+        <a href="#main-content" id="skip-link">Skip to main content</a>
+        <nav id="primary-navigation" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" aria-label="Main Content">
+        <section id="menu-section" aria-labelledby="menu-heading">
+            <h2 id="menu-heading">Menu</h2>
+            <ul>
+                <li>Cookies $18</li>
+                <li>White Bread Loaf $21</li>
+                <li>Pastries $15</li>
+                <li>Sourdough Bread $16</li>
+                <li>Scored Artisan Bread $25</li>
+                <li>Signature Weekly Item (Inquire)</li>
+            </ul>
+            
+            <figure id="signature-loaf-figure">
+                <img 
+                 srcset="assets/images/bakery-signature-loaf_c.png 1x,
+                        assets/images/bakery-signature-loaf_c 2.png 2x"
+                 src="assets/images/bakery-signature-loaf_c.png" 
+                 alt="Freshly baked sourdough bread loaf">
+                <figcaption>Our beautifully crafted signatures.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer id="site-footer" aria-label="Site Footer">
+        <section id="footer-navigation-section" aria-labelledby="footer-nav-heading">
+            <h2 id="footer-nav-heading">Quick Links</h2>
+            <nav id="secondary-navigation" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="footer-copyright-section" aria-labelledby="footer-copyright-heading">
+            <h2 id="footer-copyright-heading">Copyright</h2>
+            <p id="copyright-text">&copy; 2026 North Star Bakery. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>

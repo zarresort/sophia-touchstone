@@ -1,36 +1,89 @@
-<!DOCTYPE HTML>
-  <html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Home</title>
-  </head>
-    <body>
-      <header>
-        <h1>Welcome to North Star Bakery.</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </header>
-      <main>
-        <p> We are a Bakery located on the North Star. </p>
-        <p> This is why we are called, 'North Star Bakery' </p>
-        <p> We intend to serve all customers from all Stars. </p>
-        <p> Please order ahead for... orders. We are friendly question answerers. </p>
-        <h2>What we're known for</h2>
-        <p>We are known for our bread.</p>
-        <h3>Our Store Hours</h3>
-        <p> Wouldn't you like to know?</p>
-        <li>Monday - Thursday 8AM - 5PM</li>
-        <li>Friday - Closed</li>
-        <li>Saturday - Sunday 11AM - 2PM</li>
-        <h4>Featured Weekly Item</h4>
-        <li> We </li>
-        <li> Won't </li>
-        <li> Say. </li>
-        <p> Come find out. </p>
-      </main>
-    </body>
-  </html>
+    <title>Home - North Star Bakery</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header id="site-header" aria-label="Site Header">
+        <a href="index.html" id="header-logo-link">
+            <img src="assets/images/bakery-logo_c.png" alt="North Star Bakery Logo" width="120" height="120">
+        </a>
+        <h1>North Star Bakery</h1>
+        <a href="#main-content" id="skip-link">Skip to main content</a>
+        <nav id="primary-navigation" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" aria-label="Main Content">
+        <section id="welcome-section" aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to North Star Bakery</h2>
+            <p>Welcome to your neighborhood home for artisan breads, fresh pastries, and warm community atmosphere. Stop by daily for fresh bakes right out of the oven!</p>
+            
+            <h3 id="audio-welcome-heading">Listen to Our Audio Welcome</h3>
+            <audio src="assets/media/bakery-welcome_c.mp3" controls preload="metadata" aria-labelledby="audio-welcome-heading">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="known-for-section" aria-labelledby="known-for-heading">
+            <h2 id="known-for-heading">What We're Known For</h2>
+            <p>We pride ourselves on traditional baking methods, slow-fermented sourdoughs, and high-quality local ingredients.</p>
+            
+            <figure id="signature-loaf-figure">
+                <img src="assets/images/bakery-signature-loaf_c.png" alt="Signature sourdough loaf with a golden crispy crust" width="600">
+                <figcaption>Our Signature Sourdough Loaf, hand-crafted and baked fresh every morning.</figcaption>
+            </figure>
+        </section>
+
+        <section id="featured-item-section" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Weekly Item</h2>
+            <p>This week we are featuring our seasonal berry tarts and multi-grain artisan loaves!</p>
+            
+            <picture id="featured-item-picture">
+                <source srcset="assets/images/bakery-feature-large_c.png" media="(min-width: 800px)">
+                <source srcset="assets/images/bakery-feature-small_c.png" media="(min-width: 500px)">
+                <img src="assets/images/bakery-feature-large_c.png" alt="Display of featured weekly bakery items" width="600">
+            </picture>
+        </section>
+
+        <section id="location-hours-section" aria-labelledby="location-hours-heading">
+            <h2 id="location-hours-heading">Location & Hours</h2>
+            <address id="bakery-address">
+                <p><strong>Address:</strong> 123 Main Street, North Star Town</p>
+            </address>
+            <p><strong>Hours:</strong></p>
+            <ul>
+                <li>Monday – Friday: 6:00 AM – 6:00 PM</li>
+                <li>Saturday – Sunday: 7:00 AM – 4:00 PM</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="site-footer" aria-label="Site Footer">
+        <section id="footer-navigation-section" aria-labelledby="footer-nav-heading">
+            <h2 id="footer-nav-heading">Quick Links</h2>
+            <nav id="secondary-navigation" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="footer-copyright-section" aria-labelledby="footer-copyright-heading">
+            <h2 id="footer-copyright-heading">Copyright</h2>
+            <p id="copyright-text">&copy; 2026 North Star Bakery. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>

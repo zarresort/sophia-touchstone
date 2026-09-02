@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - North Star Bakery</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header id="site-header" aria-label="Site Header">
+        <a href="index.html" id="header-logo-link">
+            <img src="assets/images/bakery-logo_c.png" alt="North Star Bakery Logo" width="120" height="120">
+        </a>
+        <h1>Contact Us</h1>
+        <a href="#main-content" id="skip-link">Skip to main content</a>
+        <nav id="primary-navigation" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" aria-label="Main Content">
+        <h2>Inquiry & Pre-Order Form</h2>
+        <p>Please use this form to submit pre-orders or ask general questions. Fields marked with an asterisk (*) are required.</p>
+
+        <form action="#" method="post" id="contact-form" aria-labelledby="form-heading">
+            <h3 id="form-heading" class="visually-hidden">Contact Form</h3>
+            
+            <fieldset id="contact-info-fieldset">
+                <legend id="contact-info-legend">Contact Information</legend>
+
+                <p>
+                    <label for="user-name">Name *</label><br>
+                    <input type="text" id="user-name" name="user_name" required minlength="2">
+                </p>
+
+                <p>
+                    <label for="user-email">Email Address *</label><br>
+                    <input type="email" id="user-email" name="user_email" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset id="order-details-fieldset">
+                <legend id="order-details-legend">Order & Inquiry Details</legend>
+
+                <p>
+                    <label for="request-type">Request Type *</label><br>
+                    <select id="request-type" name="request_type" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="pre-order">Pre-Order</option>
+                        <option value="general-question">General Question</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pickup-date">Pickup Date (Optional):</label><br>
+                    <input type="date" id="pickup-date" name="pickup_date">
+                </p>
+
+                <p>
+                    <label for="item-details">Item / Inquiry Details *</label><br>
+                    <textarea id="item-details" name="item_details" rows="5" cols="40" placeholder="List the items and quantities you'd like to order or details about your question..." required minlength="5"></textarea>
+                </p>
+
+                <p>
+                    <label for="allergy-notes">Allergy Notes (Optional):</label><br>
+                    <textarea id="allergy-notes" name="allergy_notes" rows="3" cols="40" placeholder="Please let us know about any food allergies or dietary restrictions..."></textarea>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <p>
+                <button type="submit" id="submit-button">Submit Request</button>
+            </p>
+        </form>
+
+        <section id="location-hours-section" aria-labelledby="location-hours-heading">
+            <h2 id="location-hours-heading">Location & Hours</h2>
+            <address id="bakery-address">
+                <p><strong>Address:</strong> 123 Main Street, North Star Town</p>
+            </address>
+            <p><strong>Hours:</strong></p>
+            <ul>
+                <li>Monday – Friday: 6:00 AM – 6:00 PM</li>
+                <li>Saturday – Sunday: 7:00 AM – 4:00 PM</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="site-footer" aria-label="Site Footer">
+        <section id="footer-navigation-section" aria-labelledby="footer-nav-heading">
+            <h2 id="footer-nav-heading">Quick Links</h2>
+            <nav id="secondary-navigation" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="footer-copyright-section" aria-labelledby="footer-copyright-heading">
+            <h2 id="footer-copyright-heading">Copyright</h2>
+            <p id="copyright-text">&copy; 2026 North Star Bakery. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>
