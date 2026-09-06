@@ -39,7 +39,7 @@ function updateFavoritesUI() {
 
     const counterDisplay = document.getElementById("favorites-count");
     if (counterDisplay) {
-        counterDisplay.textContent = favorites.length - 1;
+        counterDisplay.textContent = favorites.length;
     }
 
     const favoriteButtons = document.querySelectorAll(".fav-btn");
