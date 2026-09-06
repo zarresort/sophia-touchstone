@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Products - North Star Bakery</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <header id="site-header" aria-label="Site Header">
+        <span>Saved Favorites: <strong id="favorites-count">0</strong></span>
         <a href="index.html" id="header-logo-link">
             <img src="assets/images/bakery-logo_c.png" alt="North Star Bakery Logo" width="120" height="120"> 
         </a>
@@ -26,12 +27,12 @@
         <section id="menu-section" aria-labelledby="menu-heading">
             <h2 id="menu-heading">Menu</h2>
             <ul>
-                <li>Cookies $18</li>
-                <li>White Bread Loaf $21</li>
-                <li>Pastries $15</li>
-                <li>Sourdough Bread $16</li>
-                <li>Scored Artisan Bread $25</li>
-                <li>Signature Weekly Item (Inquire)</li>
+                <li>Cookies $18<button type="button" class="fav-btn" data-id="sourdough">☆ Add to Favorites</button></li>
+                <li>White Bread Loaf $21<button type="button" class="fav-btn" data-id="sourdough">☆ Add to Favorites</button></li>
+                <li>Pastries $15<button type="button" class="fav-btn" data-id="sourdough">☆ Add to Favorites</button></li>
+                <li>Sourdough Bread $16<button type="button" class="fav-btn" data-id="sourdough">☆ Add to Favorites</button></li>
+                <li>Scored Artisan Bread $25<button type="button" class="fav-btn" data-id="sourdough">☆ Add to Favorites</button></li>
+                <li>Signature Weekly Item (Inquire)<button type="button" class="fav-btn" data-id="sourdough">☆ Add to Favorites</button></li>
             </ul>
             
             <figure id="signature-loaf-figure">
@@ -63,5 +64,6 @@
             <p id="copyright-text">&copy; 2026 North Star Bakery. All rights reserved.</p>
         </section>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
